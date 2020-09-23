@@ -15,7 +15,6 @@ const getList = (author, keyword) => {
 };
 
 const getDetail = (id) => {
-
     return {
         id: 1,
         title: '标题',
@@ -25,7 +24,33 @@ const getDetail = (id) => {
     }
 }
 
+
+const newBlog = (blogData = {}) => {
+    return {
+        id: 3
+    }
+}
+
+// 修改
+const updateBlog = (updateData = {}) => {
+    return {
+        id: 4,
+        title: '修改标题',
+        content: '修改内容'
+    }
+}
+
+// 删除
+const delBlog = (body) => {
+    let res ={
+        id: body.id
+    }
+    return res
+}
 module.exports = {
     getList,
-    getDetail
+    getDetail,
+    newBlog,
+    updateBlog,
+    delBlog
 }
