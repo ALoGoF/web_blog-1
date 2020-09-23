@@ -20,4 +20,9 @@ if(env === 'production') {
     port: 3306,
     database: 'myblog'
   }
-}
+};
+
+
+  module.exports = {
+  MYSQL_CONF
+  }
